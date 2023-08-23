@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+
+import os
 import telebot
 from telebot import types
 
-TELEGRAM_TOKEN = "6690378197:AAGJUCV5EF1-Ulu67j6fLJT4kr_gkkk3S_I"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 @bot.message_handler(commands=['start'])
@@ -160,6 +161,3 @@ def last_message(message):
     bot.reply_to(message, text)
 
 bot.polling()
-=======
-
->>>>>>> ca18ae113bcd97ddb6caa4ba2d3c04a8c286c661
