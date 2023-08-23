@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import telebot
 from telebot import types
 
@@ -159,3 +160,6 @@ def last_message(message):
     bot.reply_to(message, text)
 
 bot.polling()
+=======
+
+>>>>>>> ca18ae113bcd97ddb6caa4ba2d3c04a8c286c661
